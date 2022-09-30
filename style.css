@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    width: min(65rem, 100%);
+    margin: 3rem auto;
+    padding: .75rem 0.5rem;
+}
+
+h1, h2, h3 {
+    padding: 1rem 0;
+}
+
+section {
+    border-bottom: 2px solid #cecece;
+    padding: 1rem 0;
+}
+
+button {
+    padding: 10px 16px;
+    margin: .75rem 0;
+    background-color: lightslategray;
+    color: #111;
+    border:none;
+    border-radius: 8px;
+    font-size: 1.1em;
+    font-weight: 800;
+}
+
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: inline-block;
+}
+

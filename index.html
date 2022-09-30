@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./main.js" defer></script>
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>PIG Dice Game</h1>
+    <p>There are two players. The player whose turn it is rolls the dice. The total of the roll is added to the current player's score, unless either die comes up as a “one”. If this happens, this player's turn is over, and it is the other player's turn. After each roll, the current player can either roll again, (assuming a “one” was not rolled) or if the current player feels that luck is running thin, they can pass to the other player. The first player to get 30 points or higher wins.
+    Oh, and if you roll two “ones” (snake eyes), your current score gets zeroed out. So don't do that.</p>
+    <section>
+        <h2>Start new Game</h2>
+        <div>
+            <button id="pickFirstPlayer">Randomly pick the 1st player</button> 
+            <button id="endGame" class="hidden">End the Game</button>
+        </div>
+        
+        <h3>Dice Result: </h3>
+        <p id="diceResultText"></p>
+        <br>
+        <div id="diceResultDiv">
+        </div>
+
+        <h3 id="playerTurnIndicator">Turn: By default P1 starts</h3>
+        <div>
+            <button id="rollDice">ROLL DICE</button>
+            <button id="passTurn">PASS</button>
+        </div>
+    </section>
+    
+    <section>
+        <div>
+            <h3>Current Score</h3>
+            <div>
+                <h4>Player 1</h4>
+                <p id="scorePlayer1">0</p>
+            </div>
+            <div>
+                <h4>Player 2</h4>
+                <p id="scorePlayer2">0</p>
+            </div>
+        </div>
+        
+        <div><h2 id="winnerResult"></h2></div>
+    </section>
+    
+</body>
+</html>
